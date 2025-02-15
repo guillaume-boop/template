@@ -14,7 +14,7 @@
             box-sizing: border-box;
         }
 
-        .section {
+        .section1 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,6 +23,15 @@
             position: relative;
             background-color: #f0f0f0;
             padding: 2vw;
+        }
+
+        .section1 h1 {
+            position: absolute;
+            top: 50px;
+            font-size: clamp(20px, 5vw, 100px);
+            font-family: 'Lobster', cursive;
+            color: rgb(72, 72, 72);
+            text-align: center;
         }
 
         .image-container {
@@ -142,7 +151,14 @@
 </head>
 <body>
 
-    <section class="section">
+    
+
+
+    <section class="section1">
+
+        <!-- Titre de la section -->
+        <h1>Qui sommes nous ?</h1>
+
         <div class="image-container">
             <img src="./img/section1/logo/PLAYA-AND-BAR.png" alt="Image centrée" class="main-image">
             
