@@ -59,6 +59,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
 
        .debut {
@@ -434,10 +435,30 @@
     </div>
 
 
-    <div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div>
+    <section class="section1">
 
-    <div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div><div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div><div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div><div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div>
-    <script>
+        <!-- Titre de la section -->
+        <h1>Qui sommes nous ?</h1>
+
+        <div class="image-container">
+            <img src="./img/section1/logo/PLAYA-AND-BAR.png" alt="Image centrée" class="main-image">
+            
+            <!-- Flèches et labels -->
+            <img src="./img/section1/arrow/arrow-top-left.png" alt="Flèche" class="arrow top-left">
+            <div class="arrow-label top-left">Produits frais</div>
+
+            <img src="./img/section1/arrow/arrow-bottom-left.png" alt="Flèche" class="arrow bottom-left">
+            <div class="arrow-label bottom-left"><img src="./img/section1/fete.jpg"></div>
+
+            <img src="./img/section1/arrow/arrow-bottom-right.png" alt="Flèche" class="arrow bottom-right">
+            <div class="arrow-label bottom-right">And Bailar...</div>
+
+            <img src="./img/section1/arrow/arrow-top-right.png" alt="Flèche" class="arrow top-right">
+            <div class="arrow-label top-right"><i class="bi bi-cup-straw"></i></div>
+        </div>
+    </section>
+
+<script>
         // Toggle Hamburger Menu
         function toggleMenu() {
             const hamburger = document.querySelector('.hamburger');
