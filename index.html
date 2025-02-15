@@ -160,17 +160,16 @@
 
         /* Mobile Styles */
         @media (max-width: 1000px) {
-            body .debut {
-                background-attachment: scroll;
-            }
-
-            .debut::before {
-                background-size: 100vw auto;
-                background-repeat: no-repeat;
-                background-position: center top;
-                width: 200%;
-                height: 100%;
-            }
+       
+        .debut::before {
+            background-size: 100% auto; /* Largeur = 100%, hauteur auto */
+            height: 100vh; /* Fixer la hauteur */
+            background-position: center top;
+        }
+            .debut {
+        height: 100vh; /* Empêche l'effet de zoom en fixant la hauteur */
+        
+    }
 
 
             /* Hide Navigation */
