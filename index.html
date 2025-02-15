@@ -247,6 +247,144 @@ body .debut::before {
             color: #585050!important;
             font-family: 'Titillium' ;
         }
+
+
+        /* ---------------  Section 1  ------------------- */
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            background-color: #f0f0f0;
+            padding: 2vw;
+        }
+
+        .section1 h1 {
+            position: absolute;
+            top: 50px;
+            font-size: clamp(20px, 5vw, 100px);
+            font-family: 'Lobster', cursive;
+            color: rgb(72, 72, 72);
+            text-align: center;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 20vw;
+            height: auto;
+            min-width: 150px;
+            top: 10vh;
+        }
+
+        .image-container img.main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 10vw;
+            height: auto;
+        }
+
+        .arrow-label {
+            position: absolute;
+            color: rgb(72, 72, 72);
+            font-size: clamp(15px, 2vw, 100px);
+            white-space: nowrap;
+            font-family: 'Lobster', cursive;
+            
+        }
+
+        .arrow-label img {
+            width: 12vw;
+            min-width: 70px;
+            height: auto;
+            border-radius: 10%;
+            box-shadow: black 0px 0px 10px;
+        }
+        .arrow-label i {
+            font-size: 8vw;
+            color: darkturquoise;
+        }
+
+        /* Positionnement des flèches */
+        .arrow.top-left {
+            top: -10vw;
+            left: -15vw;
+            rotate: 20deg;
+        }
+        .arrow-label.top-left {
+            top: -6vw;
+            left: -30vw;
+        }
+
+        .arrow.bottom-left {
+            bottom: -10vw;
+            left: -15vw;
+            rotate: -0deg;
+        }
+        .arrow-label.bottom-left {
+            bottom: -6vw;
+            left: -30vw;
+        }
+
+        .arrow.bottom-right {
+            bottom: -10vw;
+            right: -15vw;
+            rotate: 20deg;
+        }
+        .arrow-label.bottom-right {
+            bottom: -6vw;
+            right: -30vw;
+        }
+
+        .arrow.top-right {
+            top: -10vw;
+            right: -15vw;
+        }
+        .arrow-label.top-right {
+            top: -10vw;
+            right: -25vw;
+        }
+
+          @media (max-width: 768px) {
+          
+            .arrow.top-left {
+                left: -5vw!important;
+            }
+            .arrow-label.top-left {
+                left: -25vw;
+            }
+
+            .arrow.bottom-left {
+                left: -5vw!important;
+            }
+            .arrow-label.bottom-left {
+                left: -25vw;
+            }
+
+            .arrow.bottom-right {
+                right: -5vw!important;
+            }
+            .arrow-label.bottom-right {
+                right: -25vw;
+            }
+
+            .arrow.top-right {
+                right: -5vw!important;
+            }
+            .arrow-label.top-right {
+                right: -20vw;
+            }
+
+          
+          }
     </style>
 </head>
 <body>
@@ -285,9 +423,35 @@ body .debut::before {
     <div class="intro-title"><h1>VAMOS A LA PLAYA</h1><br><br>
     <h3>Et on voit si sa gusta baila !</h2>
     </div>
-
     </div>
-    <div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div>
+
+
+
+    <!--  Section 1  -->
+    <section class="section1">
+
+        <!-- Titre de la section -->
+        <h1>Qui sommes nous ?</h1>
+
+        <div class="image-container">
+            <img src="./img/section1/logo/PLAYA-AND-BAR.png" alt="Image centrée" class="main-image">
+            
+            <!-- Flèches et labels -->
+            <img src="./img/section1/arrow/arrow-top-left.png" alt="Flèche" class="arrow top-left">
+            <div class="arrow-label top-left">Produits frais</div>
+
+            <img src="./img/section1/arrow/arrow-bottom-left.png" alt="Flèche" class="arrow bottom-left">
+            <div class="arrow-label bottom-left"><img src="./img/section1/fete.jpg"></div>
+
+            <img src="./img/section1/arrow/arrow-bottom-right.png" alt="Flèche" class="arrow bottom-right">
+            <div class="arrow-label bottom-right">And Bailar...</div>
+
+            <img src="./img/section1/arrow/arrow-top-right.png" alt="Flèche" class="arrow top-right">
+            <div class="arrow-label top-right"><i class="bi bi-cup-straw"></i></div>
+        </div>
+    </section>
+
+
     <script>
         // Toggle Hamburger Menu
         function toggleMenu() {
