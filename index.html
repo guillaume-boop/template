@@ -1,0 +1,305 @@
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <!-- Meta Data -->
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Voici mon site web">
+                <meta name="author" content="Guillaume ALAMEDA">
+                <meta property="og:title" content="Le site de Guillaume">
+                <meta property="og:description" content="Voici le site de guillaume pour les reseaux sociaux">
+                <meta property="og:image" content="./img/logo/favicon/favicon.png">
+                <meta property="og:url" content="URL de la page">
+                <meta name="robots" content="index, follow">
+
+                <link rel="icon" href="./img/logo/favicon/favicon.png" type="image/x-icon">
+                <link rel="shortcut icon" href="./img/logo/favicon/favicon.png" type="image/x-icon">
+                <title>Template de site 1</title>
+
+
+                <!-- Google material Police -->     
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+                    
+                <!-- Google Material Icons -->
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                    
+                <!-- Google Material Symbols -->
+                <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+
+               
+                <!-- Ajouter le CDN Bootstrap Icons -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+<style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body .debut {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Empêche tout débordement */
+}
+
+body .debut::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(196, 159, 190, 0.5), rgba(152, 254, 246, 0.5)),
+                url('./img/background/Tropical Island Sunset With Palm Trees And Reflective Water.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+     
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: rgba(51, 51, 51, 0.8); /* Fond semi-transparent */
+            color: #fff;
+            position: relative;
+        }
+
+        /* Logo */
+        .logo img {
+            height: 70px; /* Ajustez la hauteur selon vos besoins */
+            width: auto; /* Garde le ratio de l'image */
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #777777;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 25px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            animation: zoomDezoom 1s infinite;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 0.25rem;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            /* Hide Navigation */
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            /* Show Hamburger */
+            .hamburger {
+                display: flex;
+            }
+
+            /* Social Icons */
+            .social-icons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                gap: 1rem;
+            }
+
+            /* Adjust Header Padding */
+            header {
+                padding: 1rem;
+            }
+        }
+
+        /* Hamburger Animation */
+        .hamburger.active div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        @keyframes zoomDezoom {
+            0% {
+                transform: scale(1); /* Taille originale */
+            }
+            50% {
+                transform: scale(1.2) translateY(-10px); /* Zoom à 120% et montée de 10px */
+            }
+            100% {
+                transform: scale(1); /* Retour à la taille originale */
+            }
+        }
+
+
+        .intro-title {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            width: 75vw;
+        }
+
+        .intro-title h1 {
+
+            color: #f8f8f8;
+            
+        }
+
+         .intro-title h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #585050!important;
+            font-family: 'Titillium' ;
+        }
+    </style>
+</head>
+<body>
+    <div class="debut">
+    <!-- Header -->
+        <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./img/logo/favicon/favicon.png" alt="Logo">
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="intro-title"><h1>VAMOS A LA PLAYA</h1><br><br>
+    <h3>Et on voit si sa gusta baila !</h2>
+    </div>
+
+    </div>
+    <div>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br> </div>
+    <script>
+        // Toggle Hamburger Menu
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navUl = document.querySelector('nav ul');
+
+            hamburger.classList.toggle('active');
+            navUl.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</body>
+</html>
