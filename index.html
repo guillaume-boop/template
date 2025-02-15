@@ -161,15 +161,26 @@
         /* Mobile Styles */
         @media (max-width: 1000px) {
        
-        .debut::before {
-            background-size: 100% auto!important; /* Largeur = 100%, hauteur auto */
-            height: 100vh!important; /* Fixer la hauteur */
-            background-position: center top!important; /* Position de l'image */
-        }
-            .debut {
-        height: 100vh!important; /* Empêche l'effet de zoom en fixant la hauteur */
-        
-        }
+        .debut {
+    height: 100vh !important; /* Empêche l'effet de zoom en fixant la hauteur */
+    min-height: 100vh !important; /* Assure que .debut garde au moins 100vh */
+    overflow: hidden !important; /* Empêche tout débordement */
+    position: relative !important; /* Assure le bon positionnement de ::before */
+    width: 100vw !important; /* Empêche les effets de largeur indésirables */
+}
+
+.debut::before {
+    content: "";
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important; /* Largeur fixée */
+    height: 100vh !important; /* Fixe la hauteur pour éviter les déformations */
+    background-size: 100% auto !important; /* Largeur = 100%, hauteur auto */
+    background-position: center top !important; /* Position de l'image */
+    z-index: -1 !important; /* Assure que l'image reste en arrière-plan */
+}
+
 
 
             /* Hide Navigation */
