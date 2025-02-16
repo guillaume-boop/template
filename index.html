@@ -67,25 +67,27 @@
         
 
         /* --------- Section 1 ----------- */
-                .section1 {
+        .section1 {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 120vh;
             width: 100%;
             position: relative;
             background-color: #f0f0f0;
             padding: 2vw;
         }
 
-        .section1 h1 {
+        .image-container h1 {
             position: absolute;
             top: 50px;
             font-size: clamp(20px, 5vw, 100px);
             font-family: 'Lobster', cursive;
             color: rgb(72, 72, 72);
             text-align: center;
-
+            top: -20vw;
+            left: -8vw;
+            white-space: nowrap;
         }
 
         .image-container {
@@ -94,6 +96,7 @@
             width: 20vw;
             height: auto;
             min-width: 150px;
+            top: 50px;
         }
 
         .image-container img.main-image {
@@ -199,6 +202,17 @@
                 right: -20vw;
             }
 
+            .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 100%;
+            position: relative;
+            background-color: #f0f0f0;
+            padding: 2vw;
+        }
+
           
           }
        
@@ -248,9 +262,11 @@
     <section class="section1">
 
         <!-- Titre de la section -->
-        <h1>Qui sommes nous ?</h1>
-
+        
         <div class="image-container">
+
+            <h1>Qui sommes nous ?</h1>
+
             <img src="./img/section1/logo/PLAYA-AND-BAR.png" alt="Image centrée" class="main-image">
             
             <!-- Flèches et labels -->
