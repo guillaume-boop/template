@@ -19,17 +19,24 @@
             margin-bottom: 40px;
         }
 
+        .container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
         .icons {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 0 10%;
+            flex-wrap: wrap;
         }
 
         .icon {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 20px;
         }
 
         dotlottie-player {
@@ -42,16 +49,62 @@
             font-size: 24px;
             font-weight: bold;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 28px;
+            }
+
+            .container p {
+                font-size: 16px;
+            }
+
+            .icons {
+                padding: 0 5%;
+            }
+
+            .icon p {
+                font-size: 20px;
+            }
+
+            dotlottie-player {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container h1 {
+                font-size: 24px;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+
+            .icons {
+                padding: 0 3%;
+            }
+
+            .icon p {
+                font-size: 18px;
+            }
+
+            dotlottie-player {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Nos Produits</h1>
-        <h2><b>PLAYA-AND-BAR</b> propose de nombreaux produits tel que</h2>
+        <p><b>PLAYA-AND-BAR</b> propose de nombreux produits tels que</p>
         <div class="icons">
             <div class="icon">
-                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
                 <dotlottie-player src="https://lottie.host/a3c994a3-f4ac-4118-abd8-9c9796bd90d0/P1DOrip1Yb.lottie" background="transparent" speed="0.7" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                 <p>Boissons</p>
             </div>
@@ -63,7 +116,6 @@
                 <dotlottie-player src="https://lottie.host/4cd62036-a4ec-4bd5-a4a4-79417a8722cf/VYDWbDTOZU.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                 <p>Desserts</p>
             </div>
-            
         </div>
     </div>
 
