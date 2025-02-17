@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteneur Pleine Largeur</title>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <title>Conteneur Images</title>
     <style>
-        .container {
+        .container2 {
             width: 100%;
             background: white;
             padding: 40px 0;
@@ -14,59 +13,116 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .container h1 {
-            font-size: 3vw; /* Taille dynamique en fonction de la largeur de l'écran */
+        .container2 h1 {
+            font-size: 36px;
             margin-bottom: 40px;
         }
 
-        .container p {
-            font-size: 1.5em; /* Taille de police relative */
+        .container2 p {
+            font-size: 18px;
             margin-bottom: 20px;
         }
 
-        .icons {
+        .icons2 {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 0 5%; /* Ajustement du padding */
+            padding: 0 10%;
+            flex-wrap: wrap;
         }
 
-        .icon {
+        .icon2 {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 20px;
         }
 
-        dotlottie-player {
-            width: 20vw; /* Taille dynamique en fonction de la largeur de l'écran */
-            height: 20vw; /* Garder une proportion carrée */
-            max-width: 300px; /* Limite la taille maximale */
-            max-height: 300px; /* Limite la taille maximale */
+        .icon2 img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
-        .icon p {
+        .icon2 img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon2 p {
             margin-top: 15px;
-            font-size: 1.5em; /* Taille de police relative */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container2 h1 {
+                font-size: 28px;
+            }
+
+            .container2 p {
+                font-size: 16px;
+            }
+
+            .icons2 {
+                padding: 0 5%;
+            }
+
+            .icon2 p {
+                font-size: 20px;
+            }
+
+            .icon2 img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container2 h1 {
+                font-size: 24px;
+            }
+
+            .container2 p {
+                font-size: 14px;
+            }
+
+            .icons2 {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 3%;
+            }
+
+            .icon2 p {
+                font-size: 18px;
+            }
+
+            .icon2 img {
+                width: 130px;
+                height: 130px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container2">
         <h1>Nos Produits</h1>
         <p><b>PLAYA-AND-BAR</b> propose de nombreux produits tels que</p>
-        <div class="icons">
-            <div class="icon">
-                <dotlottie-player src="https://lottie.host/a3c994a3-f4ac-4118-abd8-9c9796bd90d0/P1DOrip1Yb.lottie" background="transparent" speed="0.7" loop autoplay></dotlottie-player>
+        <div class="icons2">
+            <div class="icon2">
+                <img src="./img/section2/cocktail.jpg" alt="Boissons">
                 <p>Boissons</p>
             </div>
-            <div class="icon">
-                <dotlottie-player src="https://lottie.host/9834dc1a-9d1f-4e2d-9e26-e7078457542d/ly1scPIxcN.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            <div class="icon2">
+                <img src="./img/section2/hamburger.jpg" alt="Plats Chauds">
                 <p>Plats Chauds</p>
             </div>
-            <div class="icon">
-                <dotlottie-player src="https://lottie.host/4cd62036-a4ec-4bd5-a4a4-79417a8722cf/VYDWbDTOZU.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            <div class="icon2">
+                <img src="./img/section2/dessert.jpg" alt="Desserts">
                 <p>Desserts</p>
             </div>
         </div>
